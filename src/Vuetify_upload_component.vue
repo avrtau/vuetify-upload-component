@@ -104,8 +104,15 @@
             .filter(inputFile => {
               const isDuplicate = this.files.find(file => file.name === inputFile.name) !== undefined;
               return !isDuplicate;
-            })
-            .forEach(inputFile => { this.files.push(inputFile) });
+            });
+
+          if (this.multiple) {
+            inputFiles.forEach(inputFile => { this.files.push(inputFile) });
+          }
+          else {
+            this.files = [];
+            this.files.push(inputFiles[0]);
+          }
         }
 
         this.$emit('input', this.files);
