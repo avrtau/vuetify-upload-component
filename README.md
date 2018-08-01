@@ -1,2 +1,2 @@
-# vuetify_upload_component
+# Vuetify Upload Component
 A Vuetify upload component
