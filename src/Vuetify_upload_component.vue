@@ -1,30 +1,62 @@
-<template lang="pug">
-  .cust_uploader
-    input(
-      type="file",
-      ref="fileInput",
-      :accept="accept",
-      :multiple="multiple",
+<template>
+  <div class="cust_uploader">
+    <input
+      type="file"
+      ref="fileInput"
+      :accept="accept"
+      :multiple="multiple"
       @change="onFileChange"
-    )
+    >
 
-    v-layout(row)
-      v-flex
-        v-card
-          v-toolbar(color="white")
-            v-btn(right absolute fab @click="activateFilePrompt" color="primary" small)
-              v-icon add
-            v-toolbar-title 
-              v-icon attach_file
-              |  {{ label }}
-          v-list
-            v-list-tile(v-for="(item, index) in files" :key="item.name" @click="")
-              v-list-tile-action
-                v-icon insert_drive_file
-              v-list-tile-content
-                v-list-tile-title(v-text="item.name")
-              v-list-tile-action(@click="deleteAttachment(index)")
-                v-icon delete_forever
+    <v-layout row>
+      <v-flex>
+        <v-card>
+
+          <v-toolbar color="white">
+            <v-btn
+              right
+              absolute
+              fab
+              @click="activateFilePrompt"
+              color="primary"
+              small
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
+
+            <v-toolbar-title>
+              <v-icon>attach_file</v-icon>
+              {{ label }}
+            </v-toolbar-title>
+
+          </v-toolbar>
+
+          <v-list>
+            <v-list-tile
+              v-for="(item, index) in files"
+              :key="item.name"
+              @click=""
+            >
+
+              <v-list-tile-action>
+                <v-icon>insert_drive_file</v-icon>
+              </v-list-tile-action>
+
+              <v-list-tile-content>
+                <v-list-tile-title v-text="item.name" />
+              </v-list-tile-content>
+
+              <v-list-tile-action @click="deleteAttachment(index)">
+                <v-icon>delete_forever</v-icon>
+              </v-list-tile-action>
+
+            </v-list-tile>
+          </v-list>
+
+        </v-card>
+      </v-flex>
+    </v-layout>
+
 </template>
 
 <script>
