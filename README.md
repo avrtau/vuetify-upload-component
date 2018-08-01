@@ -1,5 +1,5 @@
 # Vuetify Upload Component
-This is a simple upload component for Vuetify.
+This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
 
 ### Props:
 *`accept <String>`:* Limit accepted file-types. [default: "\*"] [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
