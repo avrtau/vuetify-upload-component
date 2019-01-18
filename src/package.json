@@ -1,6 +1,6 @@
 {
   "name": "vuetify-upload-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "Vuetify_upload_component.vue",
   "repository": {
     "type": "git",
@@ -13,5 +13,8 @@
     "name": "Avraham Tauberman",
     "url": "https://github.com/avrtau"
   },
-  "keywords": ["vuetify", "upload"]
+  "keywords": [
+    "vuetify",
+    "upload"
+  ]
 }
