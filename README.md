@@ -1,3 +1,6 @@
+![](https://img.shields.io/npm/v/vuetify-upload-component.svg)
+![](https://img.shields.io/github/size/avrtau/vuetify_upload_component/src/Vuetify_upload_component.vue.svg)
+
 # Vuetify Upload Component
 This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
 
