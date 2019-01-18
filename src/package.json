@@ -1,5 +1,9 @@
 {
   "name": "vuetify-upload-component",
   "version": "1.0.0",
-  "main": "Vuetify_upload_component.vue"
+  "main": "Vuetify_upload_component.vue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avrtau/vuetify_upload_component"
+  }
 }
