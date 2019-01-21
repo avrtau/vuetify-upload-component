@@ -1,8 +1,12 @@
 ![](https://img.shields.io/npm/v/vuetify-upload-component.svg)
 ![](https://img.shields.io/github/size/avrtau/vuetify_upload_component/src/Vuetify_upload_component.vue.svg)
-
 # Vuetify Upload Component
 This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
+
+### Install:
+```
+npm i vuetify-upload-component -s
+```
 
 ### Props:
 *`accept <String>`:* Limit accepted file-types. [default: "\*"] [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
@@ -14,29 +18,31 @@ This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
 ### Usage examples:
 #### Template:
 ##### Component with defaults:
-```vue
+```html
 <template>
-  <vuetify-upload-component v-model="files"></vuetify-upload-component>
+  <v-upload v-model="files"></v-upload>
 </template>
 ```
 ##### Allow multiple files:
-```vue
+```html
 <template>
-  <vuetify-upload-component v-model="files" multiple></vuetify-upload-component>
+  <v-upload v-model="files" multiple></v-upload>
 </template>
 ```
 ##### Accept only image files:
-```vue
+```html
 <template>
-  <vuetify-upload-component v-model="files" accept="image/*"></vuetify-upload-component>
+  <v-upload v-model="files" accept="image/*"></v-upload>
 </template>
 ```
 #### Script:
 ```javascript
 <script>
-  import VuetifyUploadComponent from "Vuetify_upload_component";
+  import VUpload from "vuetify-upload-component";
   
   export default {
+    components: { VUpload },
+
     data: () => ({
       files: [] // An array of files received from the vuetify_upload_component
     }),
