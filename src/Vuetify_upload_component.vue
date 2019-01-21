@@ -99,6 +99,7 @@
 
       deleteAttachment (itemIndex) {
         this.files.splice(itemIndex, 1);
+        this.$refs.fileInput.value = null;
         this.$emit('input', this.files);
       }
     }
