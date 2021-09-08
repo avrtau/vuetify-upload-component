@@ -1,10 +1,10 @@
 {
   "name": "vuetify-upload-component",
-  "version": "2.0.0",
-  "main": "Vuetify_upload_component.vue",
+  "version": "2.0.1",
+  "main": "Vuetify-upload-component.vue",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avrtau/vuetify_upload_component"
+    "url": "https://github.com/avrtau/vuetify-upload-component"
   },
   "description": "A simple upload component for Vuetify.",
   "bugs": "https://github.com/avrtau/vuetify_upload_component/issues",
