@@ -1,6 +1,6 @@
-![](https://img.shields.io/npm/v/vuetify-upload-component.svg)
-![](https://img.shields.io/github/size/avrtau/vuetify_upload_component/src/Vuetify-upload-component.vue.svg)
-![](https://img.shields.io/github/license/avrtau/vuetify_upload_component)
+[![](https://img.shields.io/npm/v/vuetify-upload-component.svg)](https://www.npmjs.com/package/vuetify-upload-component)
+[![](https://img.shields.io/github/size/avrtau/vuetify_upload_component/src/Vuetify-upload-component.vue.svg)](https://www.npmjs.com/package/vuetify-upload-component)
+[![](https://img.shields.io/github/license/avrtau/vuetify_upload_component)](https://github.com/avrtau/vuetify_upload_component/blob/master/LICENSE)
 # Vuetify Upload Component
 This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
 
