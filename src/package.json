@@ -1,6 +1,6 @@
 {
   "name": "vuetify-upload-component",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "dist/vuetify-upload-component.umd.js",
   "module": "dist/vuetify-upload-component.esm.js",
   "unpkg": "dist/vuetify-upload-component.min.js",
