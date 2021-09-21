@@ -4,42 +4,46 @@
 # Vuetify Upload Component
 This is a simple upload component for [Vuetify](https://vuetifyjs.com/en/).
 
-### Install:
+## Installation:
+### In the `<script>` tag:
+```html
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vuetify-upload-component"></script>
+...
+  <v-upload ...>
+...
+```
+
+### Or as a project dependency:
 ```
 npm i vuetify-upload-component -s
 ```
 
-### Props:
-*`accept <String>`:* Limit accepted file-types. [default: "\*"] [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
+## Props:
+Name \<Type\> | Description | Defaults | Notes
+--- | --- | --- | --- 
+`accept <String>` | Limit accepted file-types. | "\*" | [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
+`multiple <Boolean>` | Set to accept multiple files. | `false` | 
+`label <String>` | Header text. | "Attachments"
 
-*`multiple <Boolean>`:* Set to accept multiple files. [default: "false"]
-
-*`label <String>`:* Header text. [default: "Attachments"]
-
-### Usage examples:
-#### Template:
-##### Component with defaults:
+## Usage examples:
+### Template:
+#### Component with defaults:
 ```html
-<template>
-  <v-upload v-model="files"></v-upload>
-</template>
+<v-upload v-model="files"></v-upload>
 ```
-##### Allow multiple files:
+#### Allow multiple files:
 ```html
-<template>
-  <v-upload v-model="files" multiple></v-upload>
-</template>
+<v-upload v-model="files" multiple></v-upload>
 ```
-##### Accept only image files:
+#### Accept only image files:
 ```html
-<template>
-  <v-upload v-model="files" accept="image/*"></v-upload>
-</template>
+<v-upload v-model="files" accept="image/*"></v-upload>
 ```
-#### Script:
-```javascript
+### Script:
+```html
 <script>
-  import VUpload from "vuetify-upload-component";
+  import VUpload from "vuetify-upload-component"; // SSR and webpack
   
   export default {
     components: { VUpload },
