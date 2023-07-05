@@ -22,7 +22,7 @@ npm i vuetify-upload-component -s
 ## Props:
 Name \<Type\> | Description | Defaults | Notes
 --- | --- | --- | --- 
-`accept <String>` | Limit accepted file-types. | "\*" | [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)
+`accept <String>` | Limit accepted file-types. | "\*" | [More information...](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept)
 `multiple <Boolean>` | Set to accept multiple files. | `false` | 
 `label <String>` | Header text. | "Attachments"
 
